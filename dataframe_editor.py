@@ -7,7 +7,7 @@ from datetime import datetime
 import re
 
 # Create an SQLAlchemy engine for the "investmentdb4" schema
-engine = create_engine("mysql+pymysql://hamdan:itc-web-M1@109.237.202.133:3306/investmentdb7")
+engine = create_engine("mysql+pymysql://hamdan:itc-web-M1@109.237.202.133:3306/investmentdb6")
 
 
 # Define a function to read data from a specific table in the database

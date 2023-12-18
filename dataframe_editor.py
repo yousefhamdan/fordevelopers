@@ -12,13 +12,13 @@ engine = create_engine("mysql+pymysql://hamdan:itc-web-M1@109.237.202.133:3306/i
 
 # Define a function to read data from a specific table in the database
 def read_data_from_db(table_name):
-    try:
-        sql = f"SELECT * FROM {table_name};"
-        df = pd.read_sql(sql, engine)
-    except:
-        err = f"الرجاء الحار بالانظار قليلا وشكرا."
-        st.error(err)
-        pass
+    # try:
+    sql = f"SELECT * FROM {table_name};"
+    df = pd.read_sql(sql, engine)
+    # except:
+    #     err = f"الرجاء الحار بالانظار قليلا وشكرا."
+    #     st.error(err)
+    #     pass
     return df
 
 

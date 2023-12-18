@@ -16,6 +16,8 @@ def read_data_from_db(table_name):
         sql = f"SELECT * FROM {table_name};"
         df = pd.read_sql(sql, engine)
     except:
+        err = f"الرجاء الحار بالانظار قليلا وشكرا."
+        st.error(err)
         pass
     return df
 
